@@ -14,6 +14,7 @@ Between the SAP's allowed version control systems (VCS). We can categorize then 
 * If server is down, no one is able to collaborate.
 * Damages to the server, (and without proper backup) might result to data loss
 
+The image below depicts a centralized version control system.
 ![Centralized version control system](https://git-scm.com/book/en/v2/images/centralized.png)
 
 #### Example: ABAP Repository
@@ -30,6 +31,7 @@ Between the SAP's allowed version control systems (VCS). We can categorize then 
 * If a node is down, the others nodes will keep working.
 * Damages to the one node, can be backed up by others nodes. Might still result to data loss, but in a minor scale.
 
+The image below depicts a distributed version control system.
 ![Distributed version control system](https://git-scm.com/book/en/v2/images/distributed.png)
 
 #### Example: Git
