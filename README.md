@@ -6,10 +6,11 @@ Agenda:
     * [Centralized](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#centralized-version-control-system)
     * [Distributed](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#distributed-version-control-system)
     * [Comparing Centralized and Distributed](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#cvcs-x-dvcs)
-* [Git workdflow]()
-   * [Centralized]()
-   * [Feature branch]()
-   * [Gitflow]()
+* [Git Workflow]()
+	* [Git Basics]()
+	* [Centralized]()
+	* [Feature branch]()
+	* [Gitflow]()
 
 
 # Version Control System
@@ -63,13 +64,17 @@ The image below depicts a distributed version control system.
 | Full history of files changes | No, only latest       | Yes, each node has its own history  |
 | Synchronization               | No,                   | Yes, nodes requires synchronization |
 
-
 Based on the table above we can conclude that, **a DVCS is more powerful and flexible than CVCS**. But it's also **more complex** because it requires synchronization between nodes.
 
 Having a **well stablished workflow** for sharing data between repositories **reduces the problems and complexity** usually found in DVCS.
 
+# Git Workflow
+Because git is a very flexible tool it enables several types of workflows. The most common are: centralized, Feature Branch and the Gitflow. Before we deep dive in each of these workflows lets just recap some of the git basic concepts.
 
-    
+## Git Basics
+* Git repository: a project directory that is under version control. The `.git` folder contains all the files required to manage the version of your source code. You can create a repository by running `git init` or you can clone an existing repository by running `git clone`. 
+
+
 
 
  
