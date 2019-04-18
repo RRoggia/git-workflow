@@ -54,10 +54,10 @@ The image below depicts a distributed version control system.
 | Behavior                      | Centralized           | Distributed                         |
 | ----------------------------- | --------------------- | ----------------------------------- |
 | Source of truth               | Yes, the server       | No, several nodes                   |
-| Full history of files changes | No, only latest       | Yes, each node has its own history  |
 | Share data between nodes      | No, only the server   | Yes, nodes share data between them  |
-| Synchronization               | No, server lock files | Yes, nodes requires synchronization |
-| Simultaneous changes to file  | No, server lock files | Yes, nodes requires synchronization |
+| Simultaneous changes to file  | No, server lock files | Yes, has its own source code        |
+| Full history of files changes | No, only latest       | Yes, each node has its own history  |
+| Synchronization               | No,                   | Yes, nodes requires synchronization |
 
 
 Based on the table above we can conclude that, **a DVCS is more powerful and flexible than CVCS**. But it's also **more complex** because it requires synchronization between nodes.
