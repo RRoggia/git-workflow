@@ -1,4 +1,12 @@
 # git-workflow
+This repository contains the content to be shared at the GS Tech counsil workshop.
+
+Agenda:
+* [Version Control System](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#version-control-system)
+    * [Centralized](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#centralized-version-control-system)
+    * [Distributed](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#distributed-version-control-system)
+    * Comparing Centralized and Distributed
+
 
 # Version Control System
 * **What is it?** Revision control system that ensures archiving, versioning, security and tracking of changes.
@@ -42,6 +50,19 @@ The image below depicts a distributed version control system.
 5. User B pushes his changes to the User A git repository
 6. User A reviews and accepts the changes from User B
 
+## CVCS x DVCS
+| Behavior                      | Centralized           | Distributed                         |
+| ----------------------------- | --------------------- | ----------------------------------- |
+| Source of truth               | Yes, the server       | No, several nodes                   |
+| Full history of files changes | No, only latest       | Yes, each node has its own history  |
+| Share data between nodes      | No, only the server   | Yes, nodes share data between them  |
+| Synchronization               | No, server lock files | Yes, nodes requires synchronization |
+| Simultaneous changes to file  | No, server lock files | Yes, nodes requires synchronization |
+
+
+Based on the table above we can conclude that, **a DVCS is more powerful and flexible than CVCS**. But it's also **more complex** because it requires synchronization between nodes.
+
+Having a **well stablished workflow** for sharing data between repositories **reduces the problems and complexity** usually found in DVCS.
 
 
     
