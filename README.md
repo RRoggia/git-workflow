@@ -6,6 +6,10 @@ Agenda:
     * [Centralized](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#centralized-version-control-system)
     * [Distributed](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#distributed-version-control-system)
     * [Comparing Centralized and Distributed](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#cvcs-x-dvcs)
+* [Git workdflow]()
+   * [Centralized]()
+   * [Feature branch]()
+   * [Gitflow]()
 
 
 # Version Control System
