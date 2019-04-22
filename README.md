@@ -10,6 +10,7 @@ Agenda:
 	* [Git Basics](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#git-basics)
 	* [Centralized](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#centralized)
 	* [Feature branch](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#feature-branch)
+	* [Forking]()
 	* [Gitflow](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#gitflow)
 
 
@@ -98,6 +99,13 @@ The centralized approach is simple and practical and works fine for very small t
 4. In your local repository, change the description of the 1st step of this example and `commit` it.
 5. Execute the 4th step to the remote repository.
 6. Try to push the changes in your local repository to the remote repository. You can use `git push origin master`.
+
+## Forking
+Another usage of git that doesn't requires branches is the forking workflow. Each developer forks the "oficial repository", which means each developer will have their own public repository with the same history. The developer then does the required changes and apply it to their fork repository (changing the history). Once the changes are done and available in the developer fork repository, the maintainer of the "oficial repository" can pull the changes if it he/she thinks it fits the repository needs.
+
+![Forking workflow](https://git-scm.com/book/en/v2/images/integration-manager.png)
+
+The main advantage of this approach, is that a developer doesn't need to wait for the "official repository" maintainer to approve their changes. It can keep working with its public repository until the changes are accepted.
 
 ## Feature Branch
 All feature development should take place in a dedicated branch instead of the `master` branch. These branches are called, `feature`branches and are short-lived branches that you create and use for a single particular feature or related work. In addition, is also common to have one or two long-lived branches that represent a different stage of the development cycle. Once the `feature` branch is finished it's merged into one of the long-lived branch and deleted.
