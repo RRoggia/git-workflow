@@ -73,6 +73,25 @@ Because git is a very flexible tool it enables several types of workflows. The m
 
 ## Git Basics
 * Git repository: a project directory that is under version control. The `.git` folder contains all the files required to manage the version of your source code. You can create a repository by running `git init` or you can clone an existing repository by running `git clone`. 
+* Commit: A picture of what all your files look like at that moment and stores a reference to that snapshot.
+* Branch: A simply lightweight movable pointer to one of the commits of the repository.
+* Remote Branch: A reference (pointer) to a branch in a remote repositories.
+
+## Centralized
+One central repository, can accept code, and everyone synchronizes their work with it. There is only one branch called `master` all the changes goes to this branch.
+
+If two developers `clone` from the repository and both make changes, the first developer to push their changes back up can do so with no problems. The second developer must `merge` in the first one’s work before pushing changes up, so as not to overwrite the first developer’s changes.
+
+![Centralized workflow](https://git-scm.com/book/en/v2/images/centralized_workflow.png)
+
+The centralized approach is simple and practical and works fine for very small teams, but because it only has one branch it has the following problems:
+* branch has no protection against broken code
+* any broken code pushed to the remote will impact all the nodes synchronized
+* development cycle must stop, in order to begin another cicle (release cicle, maintenance cicle)
+* non final code must be removed from master branch before release
+* code review is not ensured by the workflow
+
+
 
 
 
