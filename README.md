@@ -3,9 +3,9 @@ This repository contains the content to be shared at the GS Tech counsil worksho
 
 Agenda:
 * [Version Control System](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#version-control-system)
-    * [Centralized](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#centralized-version-control-system)
-    * [Distributed](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#distributed-version-control-system)
-    * [Comparing Centralized and Distributed](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#cvcs-x-dvcs)
+	* [Centralized](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#centralized-version-control-system)
+	* [Distributed](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#distributed-version-control-system)
+	* [Comparing Centralized and Distributed](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#cvcs-x-dvcs)
 * [Git Workflows](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#git-workflows)
 	* [Git Basics](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#git-basics)
 	* [Centralized](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#centralized)
@@ -80,7 +80,7 @@ Because git is a very flexible tool it enables several types of workflows. The m
 ## Centralized
 One central repository, can accept code, and everyone synchronizes their work with it. There is only one branch called `master` all the changes goes to this branch.
 
-If two developers `clone` from the repository and both make changes, the first developer to push their changes back up can do so with no problems. The second developer must `merge` in the first one’s work before pushing changes up, so as not to overwrite the first developer’s changes.
+If two developers `clone` from the repository and both make changes, the first developer to push their changes back up can do so with no problems. The second developer must `merge` in the first one's work before pushing changes up, so as not to overwrite the first developer's changes.
 
 ![Centralized workflow](https://git-scm.com/book/en/v2/images/centralized_workflow.png)
 
@@ -91,7 +91,7 @@ The centralized approach is simple and practical and works fine for very small t
 * non final code must be removed from master branch before release
 * code review is not ensured by the workflow
 
-Example:
+#### Example:
 1. Fork this repository.
 2. Clone it to your local machine.
 3. Use `git log` to compare the remote history, with your local repository history.
@@ -100,7 +100,29 @@ Example:
 6. Try to push the changes in your local repository to the remote repository. You can use `git push origin master`.
 
 ## Feature Branch
-All feature development should take place in a dedicated branch instead of the master branch. 
+All feature development should take place in a dedicated branch instead of the `master` branch. These branches are called, `feature`branches and are short-lived branches that you create and use for a single particular feature or related work. In addition, is also common to have one or two long-lived branches that represent a different stage of the development cycle. Once the `feature` branch is finished it's merged into one of the long-lived branch and deleted.
+
+The previous example of two developers applying changes to the same file and having synchronization problems occurs less frequently, since the development is now isolated in branches. It's important to try to make these branches small and short-lived
+
+![Feature Branch workflow](https://git-scm.com/book/en/v2/images/lr-branches-2.png)
+
+The main advantages of the feature branch are:
+* Multiple developers working on the same code base but in different branches and without impacting the main code base
+* Enables pull requests and code reviews as part of the development process
+* Isolation of the development cycle from the other cycles of the project
+* Eases and foster the collaboration of code 
+
+Notice although the feature branch workflow adds a lots of advantages, by not knowing when to close, synchronize or split a feature branch, the developer may face several synchronization problems. It also requires more knowledge about the git and its functionalities. Another point to consider, is that the feature branch workflow, doesn't determine when a branch should be merged which leaves space to broken code or unfinished code to be pushed to the long-lived branches. 
+
+#### Example:
+1. Fork this repository.
+2. Clone it to your local machine.
+3. In your local machine. Use the `git branch feature-branch` command to create a branch named feature-branch.
+4. Apply changes in the first step of this example and `commit`.
+5. Push the `feature-branch` branch to the remote using `git push origin feature-branch`.
+6. Check your fork in the remote, and look for your branch.
+7. Create a Pull Request to the `master` branch.  
+8. Repeat the steps 2, 3, 4, 5 and 6. But create a branch with a different name.
 
 ## Gitflow
 
