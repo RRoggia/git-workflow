@@ -92,7 +92,7 @@ The centralized approach is simple and practical and works fine for very small t
 * code review is not ensured by the workflow
 
 ## Feature Branch
-
+All feature development should take place in a dedicated branch instead of the master branch. 
 
 ## Gitflow
 
