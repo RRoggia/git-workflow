@@ -91,6 +91,14 @@ The centralized approach is simple and practical and works fine for very small t
 * non final code must be removed from master branch before release
 * code review is not ensured by the workflow
 
+Example:
+1. Fork this repository.
+2. Clone it to your local machine.
+3. Use `git log` to compare the remote history, with your local repository history.
+4. In your local repository, change the description of the 1st step of this example and `commit` it.
+5. Execute the 4th step to the remote repository.
+6. Try to push the changes in your local repository to the remote repository. You can use `git push origin master`.
+
 ## Feature Branch
 All feature development should take place in a dedicated branch instead of the master branch. 
 
