@@ -6,11 +6,11 @@ Agenda:
     * [Centralized](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#centralized-version-control-system)
     * [Distributed](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#distributed-version-control-system)
     * [Comparing Centralized and Distributed](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#cvcs-x-dvcs)
-* [Git Workflow]()
-	* [Git Basics]()
-	* [Centralized]()
-	* [Feature branch]()
-	* [Gitflow]()
+* [Git Workflows](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#git-workflows)
+	* [Git Basics](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#git-basics)
+	* [Centralized](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#centralized)
+	* [Feature branch](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#feature-branch)
+	* [Gitflow](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#gitflow)
 
 
 # Version Control System
@@ -68,7 +68,7 @@ Based on the table above we can conclude that, **a DVCS is more powerful and fle
 
 Having a **well stablished workflow** for sharing data between repositories **reduces the problems and complexity** usually found in DVCS.
 
-# Git Workflow
+# Git Workflows
 Because git is a very flexible tool it enables several types of workflows. The most common are: centralized, Feature Branch and the Gitflow. Before we deep dive in each of these workflows lets just recap some of the git basic concepts.
 
 ## Git Basics
@@ -90,6 +90,11 @@ The centralized approach is simple and practical and works fine for very small t
 * development cycle must stop, in order to begin another cicle (release cicle, maintenance cicle)
 * non final code must be removed from master branch before release
 * code review is not ensured by the workflow
+
+## Feature Branch
+
+
+## Gitflow
 
 
 
