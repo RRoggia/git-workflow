@@ -71,7 +71,7 @@ Based on the table above we can conclude that, **a DVCS is more powerful and fle
 Having a **well stablished workflow** for sharing data between repositories **reduces the problems and complexity** usually found in DVCS.
 
 # Git Workflows
-Because git is a very flexible tool it enables several types of workflows. The most common are: centralized, Feature Branch and the Gitflow. Before we deep dive in each of these workflows lets just recap some of the git basic concepts.
+Because git is a very flexible tool it enables several types of workflows. The most common are: centralized, forking, feature branch and the gitflow. Before we deep dive in each of these workflows lets just recap some of the git basic concepts.
 
 ## Git Basics
 * Git repository: a project directory that is under version control. The `.git` folder contains all the files required to manage the version of your source code. You can create a repository by running `git init` or you can clone an existing repository by running `git clone`. 
