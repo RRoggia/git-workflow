@@ -136,9 +136,9 @@ Notice although the feature branch workflow adds a lots of advantages, by not kn
 ## Gitflow
 Gitflow Workflow assigns very specific roles to different branches and defines how and when they should interact. In addition to feature branches, it uses individual branches for preparing, maintaining, and recording releases.
 
-It originated from a [blog post](https://nvie.com/posts/a-successful-git-branching-model/) written in 2010 by Vicent Driessen. This blog post describes how they managed to achieve a successful git workflow.
+It originated from a [blog post](https://nvie.com/posts/a-successful-git-branching-model/) written in 2010.
 
-The gitflow works similarly to the feature branch workflow, the main diference it has very well defined states and available iteractions of each branch. 
+The gitflow works similarly to the feature branch workflow, the main difference it has very well defined states and possible interactions between these branches. 
 
 ### Branches
 There are two categories of branches in gitflow: main branches and supporting branches.
@@ -149,17 +149,25 @@ Gitflow determines two main branches with infinite lifetime:
 * `master`: Reflects production ready state
 * `develop`: Developments ready for the next release (a.k.a integration branch)
 
-**A new commit to develop represents a new feature is stable and ready for the next release.**
+A new commit to develop represents a new feature is stable and ready for the next release.
 
-**A new commit to master represents a new production release.**
+A new commit to master represents a new production release.
 
 #### Supporting Branches
+Supporting branches are short-lived branches. There are three types of supporting branches:
+* `feature`: Development of new features 
+* `release`: Preparation for a new production release
+* `hotfix`: Preparation for a fix of critical bug in production 
 
+The picture below demonstrate the interaction between the branches using gitflow.
+![Branches interactions](https://github.wdf.sap.corp/raw/tax-service/txs-core-pipeline-library/dev/docs/_static/Gitflow-Branches.png)
 
-The pricture below demonstrate how branches interact with git flow.
-![Branches workflow](https://github.wdf.sap.corp/raw/tax-service/txs-core-pipeline-library/dev/docs/_static/Gitflow-Branches.png)
+All the feature branch advantages and more:
+* `master` will never contain broken code
+* You'are always in a ready state to release your software with the `develop`
+* All the development cycles are independent and can be executed simultaneously  
 
-The  full workflow.
+How the workflow looks like
 ![Gitflow](https://nvie.com/img/git-model@2x.png)
 
 ## References
