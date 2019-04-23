@@ -10,8 +10,9 @@ Agenda:
 	* [Git Basics](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#git-basics)
 	* [Centralized](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#centralized)
 	* [Feature branch](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#feature-branch)
-	* [Forking]()
+	* [Forking](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#forking)
 	* [Gitflow](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#gitflow)
+		* [Branches](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#branches)
 
 
 # Version Control System
@@ -133,10 +134,39 @@ Notice although the feature branch workflow adds a lots of advantages, by not kn
 8. Repeat the steps 2, 3, 4, 5 and 6. But create a branch with a different name.
 
 ## Gitflow
+Gitflow Workflow assigns very specific roles to different branches and defines how and when they should interact. In addition to feature branches, it uses individual branches for preparing, maintaining, and recording releases.
+
+It originated from a [blog post](https://nvie.com/posts/a-successful-git-branching-model/) written in 2010 by Vicent Driessen. This blog post describes how they managed to achieve a successful git workflow.
+
+The gitflow works similarly to the feature branch workflow, the main diference it has very well defined states and available iteractions of each branch. 
+
+### Branches
+There are two categories of branches in gitflow: main branches and supporting branches.
+
+#### Main Branches
+Gitflow determines two main branches with infinite lifetime:
+
+* `master`: Reflects production ready state
+* `develop`: Developments ready for the next release (a.k.a integration branch)
+
+**A new commit to develop represents a new feature is stable and ready for the next release.**
+
+**A new commit to master represents a new production release.**
+
+#### Supporting Branches
 
 
+The pricture below demonstrate how branches interact with git flow.
+![Branches workflow](https://github.wdf.sap.corp/raw/tax-service/txs-core-pipeline-library/dev/docs/_static/Gitflow-Branches.png)
 
+The  full workflow.
+![Gitflow](https://nvie.com/img/git-model@2x.png)
 
+## References
+* [Atlassian Git workflow comparsion](https://br.atlassian.com/git/tutorials/comparing-workflows)
+* [Git Pro book - branching workflow](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
+* [Git Pro book - Distributed Git](https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows)
+* [Tax Service implementation of gitflow](https://github.wdf.sap.corp/tax-service/txs-core-pipeline-library)
 
 
  
