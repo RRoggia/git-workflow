@@ -162,12 +162,12 @@ Supporting branches are short-lived branches. There are three types of supportin
 The picture below demonstrate the interaction between the branches using gitflow.
 ![Branches interactions](https://github.wdf.sap.corp/raw/tax-service/txs-core-pipeline-library/dev/docs/_static/Gitflow-Branches.png)
 
-All the feature branch advantages and more:
+Gitflow has all the feature branch advantages and more:
 * `master` will never contain broken code
 * You'are always in a ready state to release your software with the `develop`
 * All the development cycles are independent and can be executed simultaneously  
 
-How the workflow looks like
+#### Example:
 ![Gitflow](https://nvie.com/img/git-model@2x.png)
 
 ## References
