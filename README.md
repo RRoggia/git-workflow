@@ -101,6 +101,9 @@ The centralized approach is simple and practical and works fine for very small t
 5. Execute the 4th step to the remote repository.
 6. Try to push the changes in your local repository to the remote repository. You can use `git push origin master`.
 
+And this is how it may look like the git history of a centralized workflow.
+![Centralized git history](https://github.wdf.sap.corp/raw/I840973/git-workflow/master/workflow-images/centralized.png)
+
 ## Forking
 Another usage of git that doesn't requires branches is the forking workflow. Each developer forks the "oficial repository", which means each developer will have their own public repository with the same history. The developer then does the required changes and apply it to their fork repository (changing the history). Once the changes are done and available in the developer fork repository, the maintainer of the "oficial repository" can pull the changes if it he/she thinks it fits the repository needs.
 
