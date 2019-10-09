@@ -2,17 +2,17 @@
 This repository contains the content to be shared at the GS Tech counsil workshop.
 
 Agenda:
-* [Version Control System](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#version-control-system)
-	* [Centralized](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#centralized-version-control-system)
-	* [Distributed](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#distributed-version-control-system)
-	* [Comparing Centralized and Distributed](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#cvcs-x-dvcs)
-* [Git Workflows](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#git-workflows)
-	* [Git Basics](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#git-basics)
-	* [Centralized](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#centralized)
-	* [Feature branch](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#feature-branch)
-	* [Forking](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#forking)
-	* [Gitflow](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#gitflow)
-		* [Branches](https://github.wdf.sap.corp/GS-Tech-Council/git-workflow#branches)
+* [Version Control System](https://github.wdf.sap.corp/I840973/git-workflow#version-control-system)
+	* [Centralized](https://github.wdf.sap.corp/I840973/git-workflow#centralized-version-control-system)
+	* [Distributed](https://github.wdf.sap.corp/I840973/git-workflow#distributed-version-control-system)
+	* [Comparing Centralized and Distributed](https://github.wdf.sap.corp/I840973/git-workflow#cvcs-x-dvcs)
+* [Git Workflows](https://github.wdf.sap.corp/I840973/git-workflow#git-workflows)
+	* [Git Basics](https://github.wdf.sap.corp/I840973/git-workflow#git-basics)
+	* [Centralized](https://github.wdf.sap.corp/I840973/git-workflow#centralized)
+	* [Feature branch](https://github.wdf.sap.corp/I840973/git-workflow#feature-branch)
+	* [Forking](https://github.wdf.sap.corp/I840973/git-workflow#forking)
+	* [Gitflow](https://github.wdf.sap.corp/I840973/git-workflow#gitflow)
+		* [Branches](https://github.wdf.sap.corp/I840973/git-workflow#branches)
 
 
 # Version Control System
