@@ -70,14 +70,52 @@ Based on the table above we can conclude that, **a DVCS is more powerful and fle
 
 Having a **well stablished workflow** for sharing data between repositories **reduces the problems and complexity** usually found in DVCS.
 
-# Git Workflows
-Because git is a very flexible tool it enables several types of workflows. The most common are: centralized, forking, feature branch and the gitflow. Before we deep dive in each of these workflows lets just recap some of the git basic concepts.
+# Concepts
+ Before we go through the git workflows lets recap some concepts used in the next section.
 
 ## Git Basics
 * Git repository: a project directory that is under version control. The `.git` folder contains all the files required to manage the version of your source code. You can create a repository by running `git init` or you can clone an existing repository by running `git clone`. 
 * Commit: A picture of what all your files look like at that moment and stores a reference to that snapshot.
 * Branch: A simply lightweight movable pointer to one of the commits of the repository.
 * Remote Branch: A reference (pointer) to a branch in a remote repositories.
+
+## Feature Toggle
+
+> Feature Toggles (feature flags) are a powerful technique that enables team to modify the system behavior without changing the code. - Martin Fowler
+
+Independently of the git workflow applying feature toggle are useful for testing new features or simply changing the system behavior.
+
+In addition to that, in the context of tracking changes, feature toggle enables to frequently synchronize (push code) with  `master` (a.k.a `trunk`) without impacting the rest of the team or destabilizing the codebase (???).
+
+### Assumptions
+
+> It enables smaller synchronization because it enables to push ( broken | bad ) code behind a feature toggle.
+
+If ( bad | broken)  code is in the repo:
+
+* Wouldn't it trigger the broken window effect?
+* How to avoid others to use this code in productive code? or How to avoid coupling between the feature flags?
+* Will it impact the metrics in the quality checks?
+
+> It's still possible to have a big feature toggle due to a developer that didn't synchronized frequently
+
+* what is the size of a feature toogle?
+* How long lives a feature toogle?
+
+> It still requires feature branches to have multiple pipelines
+
+* is it possible to have more than one pipeline with only master branch? 
+  * dev pipe -> fast feedback under 10 min
+  * master pipe -> the whole quality checks (nightly?)
+
+> Because it enables non-ready code to enter the repo, if a feature toggle is discontinued and not deleted it generates dead code. 
+
+* who manages the feature toggle?
+* are tools to make it visible?
+
+# Git Workflow
+
+Because git is a very flexible tool it enables several types of workflows. The most common are: centralized, forking, feature branch and the gitflow.
 
 ## Centralized
 One central repository, can accept code, and everyone synchronizes their work with it. There is only one branch called `master` all the changes goes to this branch.
@@ -93,7 +131,7 @@ The centralized approach is simple and practical and works fine for very small t
 * non final code must be removed from master branch before release
 * code review is not ensured by the workflow
 
-#### Example:
+### Example:
 1. Fork this repository.
 2. Clone it to your local machine.
 3. Use `git log` to compare the remote history, with your local repository history.
@@ -104,7 +142,12 @@ The centralized approach is simple and practical and works fine for very small t
 And this is how it may look like the git history of a centralized workflow.
 ![Centralized git history](https://github.wdf.sap.corp/raw/I840973/git-workflow/master/workflow-images/centralized.png)
 
+### Variation: Centralized + Feature Toggle
+
+[TO DO]
+
 ## Forking
+
 Another usage of git that doesn't requires branches is the forking workflow. Each developer forks the "oficial repository", which means each developer will have their own public repository with the same history. The developer then does the required changes and apply it to their fork repository (changing the history). Once the changes are done and available in the developer fork repository, the maintainer of the "oficial repository" can pull the changes if it he/she thinks it fits the repository needs.
 
 ![Forking workflow](https://git-scm.com/book/en/v2/images/integration-manager.png)
@@ -126,7 +169,7 @@ The main advantages of the feature branch are:
 
 Notice although the feature branch workflow adds a lots of advantages, by not knowing when to close, synchronize or split a feature branch, the developer may face several synchronization problems. It also requires more knowledge about the git and its functionalities. Another point to consider, is that the feature branch workflow, doesn't determine when a branch should be merged which leaves space to broken code or unfinished code to be pushed to the long-lived branches. 
 
-#### Example:
+### Example:
 1. Fork this repository.
 2. Clone it to your local machine.
 3. In your local machine. Use the `git branch feature-branch` command to create a branch named feature-branch.
@@ -170,14 +213,20 @@ Gitflow has all the feature branch advantages and more:
 * You'are always in a ready state to release your software with the `develop`
 * All the development cycles are independent and can be executed simultaneously  
 
-#### Example:
+### Example:
 ![Gitflow](https://nvie.com/img/git-model@2x.png)
 
+### Variation: Gitflow + Feature Toggle
+
+[TO DO]
+
 ## References
+
 * [Atlassian Git workflow comparsion](https://br.atlassian.com/git/tutorials/comparing-workflows)
 * [Git Pro book - branching workflow](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
 * [Git Pro book - Distributed Git](https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows)
 * [Tax Service implementation of gitflow](https://github.wdf.sap.corp/tax-service/txs-core-pipeline-library)
+* [Feature Toggle - Martin Fowler blog](https://martinfowler.com/articles/feature-toggles.html)
 
 
- 
+
