@@ -227,6 +227,7 @@ Gitflow has all the feature branch advantages and more:
 * [Git Pro book - Distributed Git](https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows)
 * [Tax Service implementation of gitflow](https://github.wdf.sap.corp/tax-service/txs-core-pipeline-library)
 * [Feature Toggle - Martin Fowler blog](https://martinfowler.com/articles/feature-toggles.html)
+* [Trunk based development](https://trunkbaseddevelopment.com/)
 
 
 
