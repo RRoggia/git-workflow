@@ -17,9 +17,9 @@ Agenda:
 
 # Version Control System
 * **What is it?** Revision control system that ensures archiving, versioning, security and tracking of changes.
-* **Why do we need that?** It's a [requirement for the Software Lifecycle product standard](https://wiki.wdf.sap.corp/wiki/display/pssl/SLC-25). To ensure that the source code is available for development and maintenance, that access is restricted to authorized persons, and that SAP knows what was changed in which version and by whom (named person)
+* **Why do we need that?** To ensure that the source code is available for development and maintenance, that access is restricted to authorized persons, and that you can know what was changed in which version and by whom (named person)
 
-Between the SAP's allowed version control systems (VCS). We can categorize then in two categories: Centralized (CVCS) and Distributed (DVCS).
+There are two categories of version control systems (VCS): Centralized (CVCS) and Distributed (DVCS).
 
 ## Centralized version control system
 * A single server does the source code version control. This server is the source of truth.
