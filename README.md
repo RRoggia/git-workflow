@@ -2,17 +2,17 @@
 This repository contains the content to be shared at the GS Tech counsil workshop.
 
 Agenda:
-* [Version Control System](https://github.wdf.sap.corp/I840973/git-workflow#version-control-system)
-	* [Centralized](https://github.wdf.sap.corp/I840973/git-workflow#centralized-version-control-system)
-	* [Distributed](https://github.wdf.sap.corp/I840973/git-workflow#distributed-version-control-system)
-	* [Comparing Centralized and Distributed](https://github.wdf.sap.corp/I840973/git-workflow#cvcs-x-dvcs)
-* [Git Workflows](https://github.wdf.sap.corp/I840973/git-workflow#git-workflows)
-	* [Git Basics](https://github.wdf.sap.corp/I840973/git-workflow#git-basics)
-	* [Centralized](https://github.wdf.sap.corp/I840973/git-workflow#centralized)
-	* [Feature branch](https://github.wdf.sap.corp/I840973/git-workflow#feature-branch)
-	* [Forking](https://github.wdf.sap.corp/I840973/git-workflow#forking)
-	* [Gitflow](https://github.wdf.sap.corp/I840973/git-workflow#gitflow)
-		* [Branches](https://github.wdf.sap.corp/I840973/git-workflow#branches)
+* [Version Control System](#version-control-system)
+	* [Centralized](#centralized-version-control-system)
+	* [Distributed](#distributed-version-control-system)
+	* [Comparing Centralized and Distributed](#cvcs-x-dvcs)
+* [Git Workflows](#git-workflows)
+	* [Git Basics](#git-basics)
+	* [Centralized](#centralized)
+	* [Feature branch](#feature-branch)
+	* [Forking](#forking)
+	* [Gitflow](#gitflow)
+		* [Branches](#branches)
 
 
 # Version Control System
@@ -140,7 +140,7 @@ The centralized approach is simple and practical and works fine for very small t
 6. Try to push the changes in your local repository to the remote repository. You can use `git push origin master`.
 
 And this is how it may look like the git history of a centralized workflow.
-![Centralized git history](https://github.wdf.sap.corp/raw/I840973/git-workflow/master/workflow-images/centralized.png)
+![Centralized git history](./workflow-images/centralized.png)
 
 ### Variation: Centralized + Feature Toggle
 
@@ -205,9 +205,6 @@ Supporting branches are short-lived branches. There are three types of supportin
 * `release`: Preparation for a new production release
 * `hotfix`: Preparation for a fix of critical bug in production 
 
-The picture below demonstrate the interaction between the branches using gitflow.
-![Branches interactions](https://github.wdf.sap.corp/raw/tax-service/txs-core-pipeline-library/dev/docs/_static/Gitflow-Branches.png)
-
 Gitflow has all the feature branch advantages and more:
 * `master` will never contain broken code
 * You'are always in a ready state to release your software with the `develop`
@@ -225,7 +222,6 @@ Gitflow has all the feature branch advantages and more:
 * [Atlassian Git workflow comparsion](https://br.atlassian.com/git/tutorials/comparing-workflows)
 * [Git Pro book - branching workflow](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
 * [Git Pro book - Distributed Git](https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows)
-* [Tax Service implementation of gitflow](https://github.wdf.sap.corp/tax-service/txs-core-pipeline-library)
 * [Feature Toggle - Martin Fowler blog](https://martinfowler.com/articles/feature-toggles.html)
 * [Trunk based development](https://trunkbaseddevelopment.com/)
 
